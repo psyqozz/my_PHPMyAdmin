@@ -1,0 +1,99 @@
+/*
+** ETNA PROJECT, 05/11/2018 by juzain_d
+** style css
+** File description:
+**      ...
+*/
+
+ body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    font-family: Verdana, sans-serif;
+    font-size: 100%;
+}
+footer {
+    background-color: red;
+}
+h1 {
+    font-size: 200%;
+    color: navy;
+    text-align: center;
+}
+h2 {
+    font-size: 150%;
+    color: red;
+    padding-left: 15px;
+}
+p,ul,li,td {
+    color: black;
+}
+#leftMenu {
+    border: 1px solid black;
+    text-align: center;
+    margin-top : 20px;
+    padding: 1em;
+    background-color: Silver;
+    color: rgb(0,85,227);
+    float: left;
+    width: 210px;
+    height: 600px;
+    margin: auto;
+
+}
+.smenu  {
+    margin-left: -25px;
+    list-style-type: none;
+    border: 1px solid #600;
+    float: left;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    background: #4f5b93;
+}
+#entete {
+    margin-top : 1px;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 10px;
+    float: none;
+    padding: 1em;
+    background-color: silver;
+    width: 1550px;
+}
+
+#containts {
+
+    text-align: center;
+    margin-top : 1px;
+    padding: 1em;
+    margin: auto;
+}
+a {
+    color: black;
+}
+.error{
+    background-color:rgb(237,210,229);
+    color:rgb(203,28,128);
+    font-size:1.1em;
+    width:95%;
+}
+#containts img {
+    height: 30px;
+    width: 25px;
+}
+#table {
+
+    text-align: center;
+}
+
+#table table {
+    margin: auto;
+}
+
+#table th {
+    background: bottom;
+    background-color: red;
+}

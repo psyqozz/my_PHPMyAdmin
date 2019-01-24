@@ -1,0 +1,43 @@
+<?php
+//
+// ETNA PROJECT, 06/11/2018 by juzain_d
+// controleur connexion
+// File description:
+//      ...
+//
+
+    if(!isset($_REQUEST['action'])) {
+        $_REQUEST['action'] = 'requestCo';
+    }
+    $action = $_REQUEST['action'];
+    switch($action){
+        case 'requestCo':{
+            include("vues/v_connexion.php");
+        break;
+        }
+        case 'confirmCo':{
+            $user = $_REQUEST['user'];
+            $mdp = $_REQUEST['password'];
+            $co = $pdo->test_co($user, $mdp);
+            if(!$co){
+                // ajouterErreur("Login ou mot de passe incorrect");
+                // include("vues/v_erreurs.php");
+                include("vues/v_connexion.php");
+                echo "<center>incorrect password or login !</center>";
+            }
+            else{
+                include("vues/v_sommaire.php");
+            }
+        break;
+        }
+        default :{
+        include("vues/v_connexion.php");
+        break;
+        }
+    }
+
+
+
+
+?>
+

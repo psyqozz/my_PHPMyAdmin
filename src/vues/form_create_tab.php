@@ -1,0 +1,34 @@
+<?php
+//
+// ETNA PROJECT, 08/11/2018 by juzain_d
+// create tab
+// File description:
+//      ...
+//
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+     <title> MY_phpAdmin</title>
+     <link href="../style/styles.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+     <div id="containts">
+        <h2>Create your table :</h2>
+        <form name="tab" method="post" action="../index.php?uc=manageTable&action=confirmCreateTab&name=<?php echo $nameDB; ?>">
+            <p>  Name of table : <input type="text"  name="nameTab"/> </p\></br>
+            <input type="submit" name="confirm" value="Confirm">
+            <input type="reset" name="reset" value="Reset">
+        </form>
+     </div>
+   </body>
+</html>
+
+
+
+
+    

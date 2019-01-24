@@ -1,0 +1,28 @@
+<?php
+//
+// ETNA PROJECT, 08/11/2018 by juzain_d
+// count column
+// File description:
+//      ...
+//
+
+?>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> MY_phpAdmin</title>
+    <link href="../style/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+     <body>
+         <div id="containts">
+              <h2>Number of rows : </h2>
+              <form name="col" method="post" action="../index.php?uc=manageTable&action=showTable&name=<?php echo $nameDB;?>"><br>
+                 <p> Current Table name :<input type="text" name="nameTab" value="<?php echo $nameTab; ?>"></p>
+                 <input type="submit" name="Return" value="Return">
+              </form>
+              <?php if(!empty($nbRow)) {echo $nbRow." Rows.";} else {echo "0 Rows.";} ?>
+          </div>
+     </body>
+</html>

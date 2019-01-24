@@ -1,0 +1,28 @@
+<?php
+//
+// ETNA PROJECT, 08/11/2018 by juzain_d
+// show column
+// File description:
+//      ...
+//
+
+?>
+<body>
+<div id="table">
+      <table border=1>
+       <tr>
+          <th>Name Columns</th>
+          <th> type </th>
+       </tr>
+           <?php foreach($cols as $oneCol): ?>
+       <tr>
+           <td><?php echo $oneCol['Field']; ?></td>
+           <td><?php echo $oneCol['Type']; ?></td>
+       </tr>
+           <?php endforeach; ?>
+       </table><br>
+       <form name="Return" method="post" action="../index.php?uc=manageTable&action=showTable&name=<?php echo $nameDB;?>">
+            <input type="submit" value="Return">
+        </form>
+    </div>
+</body>
