@@ -15,8 +15,8 @@ Technologies utilisées : PHP7, HTML5, CSS3, SQL, Linux, MySql, Apache2
 
 -Gestion de base de données
 
-![](/screen/manageDB.png)
+![](/screen/manageDB.PNG)
 
 -Ecrire sa requête SQL
 
-![](/screen/WriteSql.png)
+![](/screen/WriteSql.PNG)
